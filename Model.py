@@ -22,6 +22,6 @@ model.add(tf.keras.layers.Dense(10, activation='softmax'))
 
 model.compile(optimizer='adam',loss='sparse_categorical_crossentropy',metrics = ['accuracy'])
 
-model.fit(train_X,train_y,epochs=32)
+model.fit(train_X,train_y,epochs=64)
 
-model.save('MNIST')
+model.save('Trained_Model')
