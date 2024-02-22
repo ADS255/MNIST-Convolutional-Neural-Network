@@ -13,7 +13,7 @@ class Utils:
         model.save('Trained_Model')
 
     @staticmethod
-    def TestModel():
+    def testModel():
         Utils.test_X = tf.keras.utils.normalize(Utils.test_X,axis = 1)
 
         model = tf.keras.models.load_model('Trained_Model')
@@ -22,3 +22,11 @@ class Utils:
         print("RESULTS --------------------------------------------------")
         print(loss)
         print(accuracy)
+
+    @staticmethod
+    def toH5Format():
+        model = tf.keras.models.load_model('Trained_Model')
+        model.save('Trained_Model.h5')
+    
+#Utils.toH5Format()
+Utils.testModel()

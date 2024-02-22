@@ -3,8 +3,6 @@ import tensorflow as tf
 import numpy as np
 import matplotlib.pyplot as plt
 
-from Model_Test import *;
-
 #loading the dataset
 (train_X, train_y), (test_X, test_y) = mnist.load_data()
 
