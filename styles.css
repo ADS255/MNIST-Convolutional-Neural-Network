@@ -1,16 +1,16 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   width: 100%;
   height: 100vh;
-
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgb(218, 218, 218);
+  background-color: #f0f0f0;
 }
 
 .stack-container {
@@ -18,23 +18,50 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 5px;
-  width: 280px;
+  gap: 10px;
+  width: 300px; /* Increased width to accommodate space */
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 button {
   width: 100%;
+  padding: 8px 12px;
+  border: none;
+  background-color: #4caf50;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+p {
+  text-align: center; /* Center-align the text */
+  margin-top: 10px; /* Add some space from the prediction label */
+  font-size: 16px; /* Adjust the font size */
+  color: #666; /* Use a slightly darker color for the text */
 }
 
 #input-canvas {
-  background-color: white;
+  background-color: #000;
+  width: 280px;
+  height: 280px;
 }
 
 #prediction-label {
   width: 100%;
-  background-color: greenyellow;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  background-color: #7cb342;
+  padding: 20px; /* Increased padding for better spacing */
   text-align: center;
   border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 20px; /* Adjusted font size */
 }
