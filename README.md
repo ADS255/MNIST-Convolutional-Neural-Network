@@ -2,6 +2,10 @@
 
 This project implements a Convolutional Neural Network (CNN) to recognize handwritten digits from the MNIST dataset.
 
+## Interactive web version
+
+You can try out the model [here](https://ads255.github.io/MNIST-Convolutional-Neural-Network/)
+
 ## Overview
 
 The MNIST dataset is a popular benchmark dataset for machine learning, consisting of 28x28 pixel grayscale images of handwritten digits (0-9). The goal of this project is to develop a CNN model capable of accurately classifying these digits.
