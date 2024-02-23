@@ -4,14 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MNIST CNN</title>
-    <script src="index.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"
+      type="module"
+    ></script>
+    <script src="index.js" type="module"></script>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="stack-container">
       <canvas id="input-canvas"></canvas>
-      <button>reset</button>
-      <p id="prediction-label">-</p>
+      <p id="instructions">Draw a digit from 0 to 9 on the canvas above.</p>
+      <button id="clear-button">clear</button>
+      <p id="prediction-label">Prediction: -</p>
     </div>
   </body>
 </html>
